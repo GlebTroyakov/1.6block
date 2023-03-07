@@ -84,7 +84,7 @@
   }
 }
 /*________________for computers__________________*/
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1440px) {
   .about-us {
     margin-left: 14px;
     padding-bottom: 40px;
@@ -237,7 +237,7 @@
   }
 }
 /*________________for computers__________________*/
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1400px) {
   .brands {
     padding: 0 0 15px 0;
     margin: 0;
@@ -302,7 +302,7 @@
   }
 }
 /*________________for computers from 1120 width__________________*/
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1440px) {
   /* __________header__________*/
   .header {
     background-color: #F8F8F8;
@@ -377,7 +377,7 @@
   }
 }
 /*________________for computers__________________*/
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1440px) {
   .navigator {
     clear: both;
     flex-wrap: wrap;
@@ -413,7 +413,7 @@
   }
 }
 /*________________for computers__________________*/
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1440px) {
   .title-before-navigator__h1 {
     margin-left: 32px;
   }
@@ -441,6 +441,178 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+.menu {
+  max-width: 320px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 88px;
+  min-width: 320px;
+  align-items: center;
+}
+
+.close_menu {
+  margin: 20px 17px 20px 20px;
+}
+
+.button {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu__button {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.header-menu__logo {
+  margin: 14px 48px 14px 0;
+}
+
+.header-menu__logo:hover {
+  opacity: 0.9;
+}
+
+.button:hover {
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition-duration: 0.5s;
+}
+
+.main-menu {
+  /*display: flex;*/
+  /*vertical-align: center;*/
+  padding: 24px 0 268px 0;
+}
+
+.main__line {
+  margin-top: -6px;
+}
+
+.main-menu__ul-menu {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C21;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ul-menu__link {
+  text-decoration: none;
+  color: #1B1C21;
+}
+
+.ul-menu__li {
+  margin: 0 0 32px 24px;
+  transition: 0.3s;
+}
+
+.ul-menu__li:hover {
+  transform: translateX(25px);
+}
+
+.ul-menu__li:hover .ul-menu__link {
+  color: #7E7E82;
+}
+
+.ul-menu__li:hover .ul-menu__link::before {
+  content: "";
+  position: absolute;
+  border-color: #41F6D7;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0 4px 4px 0;
+  height: 32px;
+  top: -5px;
+  left: -49px;
+  width: 0;
+}
+
+.ul-menu__li_active {
+  color: #7E7E82;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+
+.footer__connection-menu {
+  display: flex;
+  margin-left: 24px;
+}
+
+.connection__icon {
+  margin-right: 16px;
+}
+
+.footer-menu__email {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C21;
+  margin: 16px 0 12px 24px;
+}
+
+.footer-menu__number {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1B1C21;
+  margin: 0 0 12px 24px;
+  font-weight: bold;
+}
+
+.footer-menu__languages {
+  margin: 40px 0 0 24px;
+}
+
+.languages__button {
+  display: none;
+}
+
+.languages__text {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C21;
+  margin: 0 7px 0 0;
+}
+
+.languages__text-active {
+  color: #7E7E82;
+}
+
+/*Возможность переключать языки, но не дореализованная (без логики, чтоб отключался изначально автивный)*/
+.languages__button:checked + span {
+  color: #7E7E82;
+}
+
+.menu {
+  display: none;
+}
+
+/*________________for computers__________________*/
+@media screen and (min-width: 1440px) {
+  .menu {
+    display: inline;
+  }
+  .body {
+    display: flex;
+  }
 }
 .main {
   background-color: #F8F8F8;

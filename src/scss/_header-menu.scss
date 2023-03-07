@@ -1,0 +1,37 @@
+.header-menu {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 88px;
+  min-width: 320px;
+  align-items: center;
+}
+
+.close_menu {
+  margin: 20px 17px 20px 20px;
+}
+
+.button {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu__button {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.header-menu__logo {
+  margin: 14px 48px 14px 0;
+}
+
+.header-menu__logo:hover {
+  opacity: 0.9;
+}
+
+.button:hover {
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition-duration: 0.5s;
+}

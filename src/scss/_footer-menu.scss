@@ -1,0 +1,55 @@
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+
+.footer__connection-menu {
+  display: flex;
+  margin-left: 24px;
+}
+
+.connection__icon {
+  margin-right: 16px;
+}
+
+.footer-menu__email {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C21;
+  margin: 16px 0 12px 24px;
+}
+
+.footer-menu__number {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1B1C21;
+  margin: 0 0 12px 24px;
+  font-weight: bold;
+}
+
+.footer-menu__languages {
+  margin: 40px 0 0 24px;
+}
+
+.languages__button {
+  display: none;
+}
+
+.languages__text {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C21;
+  margin: 0 7px 0 0;
+}
+
+.languages__text-active {
+  color: #7E7E82;
+}
+/*Возможность переключать языки, но не дореализованная (без логики, чтоб отключался изначально автивный)*/
+.languages__button:checked + span{
+  color: #7E7E82;
+}
