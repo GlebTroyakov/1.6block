@@ -1,0 +1,51 @@
+.navigator {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+.navigator div a {
+  text-decoration: none;
+  color: #7E7E82;
+  font-family: 'TT Lakes Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  flex-shrink: 0;
+}
+
+.navigator div {
+  flex-shrink: 0;
+}
+
+/*.navigator div a:hover {*/
+.navigator div:first-child a {
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  padding: 8px 9.3px 8px 16.54px;
+}
+
+
+/*________________for tablets__________________*/
+
+@media screen and (min-width: 768px) {
+  .navigator {
+    margin-left: 20px;
+  }
+}
+
+/*________________for computers__________________*/
+@media screen and (min-width: 1120px) {
+  .navigator {
+    clear: both;
+    flex-wrap: wrap;
+    margin-left: 35px;
+    justify-content: space-between;
+    overflow-x: unset;
+    margin-right: 35px;
+  }
+}

@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  min-height: 88px;
+  min-width: 320px;
+  align-items: center;
+}
+.status-order__text,
+.make-order__text,
+.header .profile,
+.header .chat,
+.header .call,
+.header__separate-line-first,
+.header__separate-line-thord {display: none;}
+
+
+
+/*________________for tablets__________________*/
+
+@media screen and (min-width: 768px) {
+
+  /* __________header__________*/
+  .header__separate-line-second,
+  #other_text_tablets {
+    display: none;
+  }
+
+  .header .chat,
+  .header .call,
+  .header .profile,
+  .header__separate-line-first,
+  .header__separate-line-thord,
+  #other_text_mobile {
+    display: inline;
+  }
+
+  .header {
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
+  .header__logo {
+    margin-right: 250px;
+  }
+}
+
+
+
+/*________________for computers from 1120 width__________________*/
+
+@media screen and (min-width: 1120px) {
+
+  /* __________header__________*/
+  .header {
+    background-color: #F8F8F8;
+  }
+
+  .left-menu,
+  .header__logo,
+  .header .call,
+  .header .chat,
+  .header .profile,
+  .header__separate-line-first,
+  .header__separate-line-second,
+  .header__separate-line-thord,
+  .header__left_menu {
+    display: none;
+  }
+
+  #other_text_tablets {
+    display: inline;
+  }
+
+  .make-order__text,
+  .status-order__text {
+    display: inline;
+    font-family: 'TT Lakes Regular', sans-serif;
+    color: #1B1C21;
+    margin-right: 8px;
+  }
+
+  .header .make-order,
+  .header .status-order {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+  }
+
+  .header {
+    float: right;
+    margin-right: 10px;
+  }
+}
