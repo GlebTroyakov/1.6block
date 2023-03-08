@@ -1,0 +1,99 @@
+.service-prices {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.service-prices__title {
+  font-family: 'TT Lakes Regular', sans-serif;
+  font-weight: 200;
+  color: $color-additional-text;
+  font-size: 16px;
+  padding: 16px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, $color-main-background, $color-additional-background);
+}
+
+.service-prices-swiper {
+  /*width: 100%;*/
+  height: 250px;
+}
+
+.service-prices-swiper-wrapper {
+  display: flex;
+  margin: 0 16px 0 16px;
+  /*margin-left: 16px;*/
+}
+
+.service-prices-card {
+  box-sizing: border-box;
+  background: $color-additional-background;
+  border: 1px $color-border solid;
+  padding: 0 16px;
+  border-radius: 6px;
+  width: 260px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  //align-content: space-between;
+  justify-content: space-between;
+}
+
+.service-prices-card-text {
+  font-family: 'TT Lakes Regular', sans-serif;
+  color: $color-main-text;
+  font-size: 14px;
+}
+
+.service-prices-card-title {
+  color: $color-additional-text;
+  display: block;
+}
+
+.service-prices-card-block {
+  padding: 0;
+  margin: 0;
+}
+
+.service-prices-card__link {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.service-prices-swiper-container-paginator {
+  position: relative;
+  bottom: 0.3em; /* расстояние от swiper */
+}
+
+.service-prices-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  background-color: $color-circle-paginator;
+}
+
+.service-prices__info-text {
+  margin: 0;
+  padding: 0 16px;
+  font-family: "TT Lakes Regular", sans-serif;
+  font-size: 14px;
+  color: $color-main-text;
+}
+
+.service-prices__button {
+  margin: 0;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.service-prices__button-text {
+  font-family: "TT Lakes Medium", sans-serif;
+  font-size: 16px;
+  color: $color-main-text;
+}
+
+
+
