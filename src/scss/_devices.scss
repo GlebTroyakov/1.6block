@@ -7,16 +7,16 @@
 .devices__title {
   font-family: 'TT Lakes Regular', sans-serif;
   font-weight: 200;
-  color: #7E7E82;
+  color: $color-additional-text;
   font-size: 16px;
   padding: 16px;
   text-transform: uppercase;
-  background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+  background: linear-gradient(to right, $color-main-background, $color-additional-background);
 }
 
 .devices-swiper {
   /*width: 100%;*/
-  height: 234px;
+  height: 224px;
 }
 
 .devices-swiper-wrapper {
@@ -26,9 +26,32 @@
 }
 
 .devices-card {
-  max-width: 240px !important;
-  height: 160px !important;
-  /*width: auto; !*ширина слайдера*!*/
+  box-sizing: border-box;
+  background: $color-additional-background;
+  border: 1px $color-border solid;
+  padding: 0 16px 16px 16px;
+  font-size: 18px;
+  border-radius: 6px;
+  width: 240px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.devices-card__text {
+  align-self: flex-start;
+  color: $color-main-text;
+}
+
+.devices-card__link {
+  align-self: flex-end;
+  //display: none;
+}
+
+.devices-card__text {
+  font-family: 'TT Lakes Regular', sans-serif;
 }
 
 .swiper-container-paginator {
@@ -40,7 +63,7 @@
   width: 12px;
   height: 12px;
   line-height: 12px;
-  background-color: #B5B6BC;
+  background-color: $color-circle-paginator;
 }
 
 .devices__btn-show-more {
@@ -61,20 +84,6 @@
   text-align: left;
 }
 
-.devices-card {
-  box-sizing: border-box;
-  display: flex;
-  background: #FFFFFF;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px;
-  border-radius: 6px;
-  border: 1px #EAEAEA solid;
-  padding: 16px;
-}
-
-
 
 /*________________for tablets__________________*/
 
@@ -92,22 +101,21 @@
   }
 
   .devices-swiper {
-    height: 145px;
-    /*height: 100%;*/
+    height: 155px;
     padding: 15px 0;
   }
 
   .devices-swiper-wrapper {
-    width: 94% !important;
+    width: 94%;
     padding-left: 16px;
-    padding-right: 26px !important;
+    padding-right: 26px;
     grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
-    display: grid !important;
+    display: grid;
     grid-gap: 10px;
   }
 
   .devices-card {
-    width: 224px !important;
+    max-width: 224px;
   }
 
   .devices-swiper-pagination {
@@ -138,7 +146,7 @@
 
 
 /*________________for computers__________________*/
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1440px) {
   .devices {
     padding: 0 0 15px 0;
     margin: 0;
@@ -152,16 +160,24 @@
     padding-left: 30px;
     padding-right: 26px;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    display: grid !important;
+    display: grid;
     grid-gap: 15px;
   }
 
   .devices-card {
-    width: 240px !important;
+    min-width: 240px;
   }
 
   .devices__btn-close,
   .devices__btn-show-more {
     margin-left: 42px;
+  }
+}
+
+/*________________for computers__________________*/
+@media screen and (min-width: 1660px) {
+  .devices__btn-close,
+  .devices__btn-show-more {
+    display: none !important;
   }
 }

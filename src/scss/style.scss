@@ -16,20 +16,11 @@
 @import "_devices.scss";
 @import "_service-price.scss";
 @import "_footer-copyright.scss";
+@import "_overlay.scss";
+@import "_feedback.scss";
+@import "_callback.scss";
 
 
 .main {
   background-color: $color-main-background;
 }
-
-@media screen and (min-width: 1440px) {
-  .body .main-content {
-    width: 80% !important;
-  }
-
-  .body .menu {
-    width: 20% !important;
-  }
-
-}
-

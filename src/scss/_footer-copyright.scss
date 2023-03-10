@@ -1,6 +1,6 @@
 .footer-copyright {
   margin: 0;
-  padding: 0;
+  padding: 50px 0 16px;
   background-color: $color-main-background;
 }
 
@@ -11,4 +11,23 @@
   font-family: "TT Lakes Regular", sans-serif;
   font-size: 14px;
   color: $color-additional-text;
+}
+
+/*________________for tablets__________________*/
+
+@media screen and (min-width: 768px) {
+  .footer-copyright {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    padding: 80px 16px 25px 16px;
+  }
+
+  .footer-copyright-text {
+    text-align: left;
+  }
+
+  .footer-copyright-text:last-child {
+    text-align: right;
+  }
 }

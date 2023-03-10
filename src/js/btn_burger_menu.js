@@ -17,7 +17,9 @@ export default function burgerMenu () {
   });
 
   overlay.addEventListener('click', function() {
-    menu.style.display = 'none';
     overlay.style.display = 'none';
+    if (window.innerWidth <= 1440) {
+      menu.style.display = 'none';
+    }
   })
 }

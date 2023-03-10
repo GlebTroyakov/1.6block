@@ -8,7 +8,7 @@
 
 .navigator div a {
   text-decoration: none;
-  color: #7E7E82;
+  color: $color-additional-text;
   font-family: 'TT Lakes Regular', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -23,9 +23,9 @@
 
 /*.navigator div a:hover {*/
 .navigator div:first-child a {
-  border: 2px solid #B8FFEC;
+  border: 2px solid $color-green;
   border-radius: 6px;
-  background-color: #FFFFFF;
+  background-color: $color-additional-background;
   padding: 8px 9.3px 8px 16.54px;
 }
 

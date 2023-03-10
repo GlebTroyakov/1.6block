@@ -8,40 +8,38 @@
 .brands__title {
   font-family: 'TT Lakes Regular', sans-serif;
   font-weight: 200;
-  color: #7E7E82;
+  color: $color-additional-text;
   font-size: 16px;
   padding: 16px;
   text-transform: uppercase;
-  background: #FFFFFF;
+  background: linear-gradient(to right, $color-main-background, $color-additional-background);
 }
 
-.swiper {
-  /*width: 100%;*/
+.brands__swiper {
   height: 134px;
 }
 
-.swiper-wrapper {
+.brands__swiper-wrapper {
   display: flex;
   margin: 0 16px 0 16px;
-  /*margin-left: 16px;*/
 }
 
-.swiper-slide {
-  max-width: 240px !important;
-  height: 72px !important;
+.brand-card {
+  max-width: 240px;
+  height: 72px;
   /*width: auto; !*ширина слайдера*!*/
 }
 
-.swiper-container-paginator {
+.brands-swiper-container-paginator {
   position: relative;
   bottom: 1em; /* расстояние от swiper */
 }
 
-.swiper .swiper-pagination-bullet {
+.brands__swiper .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   line-height: 12px;
-  background-color: #B5B6BC;
+  background-color: $color-circle-paginator;
 }
 
 .brands__btn-show-more {
@@ -65,13 +63,13 @@
 .brand-card {
   box-sizing: border-box;
   display: flex;
-  background: #FFFFFF;
+  background: $color-additional-background;
   text-align: center;
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
   border-radius: 6px;
-  border: 1px #EAEAEA solid;
+  border: 1px $color-border solid;
   padding: 16px;
 }
 
@@ -93,24 +91,23 @@
 
   .brands__swiper {
     height: 145px;
-    /*height: 100%;*/
     padding: 15px 0;
   }
 
-  .swiper-wrapper {
-    width: 94% !important;
+  .brands__swiper-wrapper {
+    width: 94%;
     padding-left: 16px;
-    padding-right: 26px !important;
+    padding-right: 26px;
     grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
-    display: grid !important;
+    display: grid;
     grid-gap: 10px;
   }
 
-  .swiper-slide {
-    width: 224px !important;
+  .brand-card {
+    width: 224px;
   }
 
-  .swiper-pagination {
+  .brands-swiper-pagination {
     display: none;
   }
 
@@ -138,7 +135,7 @@
 
 
 /*________________for computers__________________*/
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1440px) {
   .brands {
     padding: 0 0 15px 0;
     margin: 0;
@@ -148,20 +145,29 @@
     padding: 15px 0;
   }
 
-  .swiper-wrapper {
+  .brands__swiper-wrapper {
     padding-left: 30px;
     padding-right: 26px;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    display: grid !important;
+    display: grid;
     grid-gap: 15px;
   }
 
-  .swiper-slide {
-    width: 240px !important;
+  .brand-card {
+    width: 240px;
   }
 
   .brands__btn-close,
   .brands__btn-show-more {
     margin-left: 42px;
+  }
+}
+
+
+/*________________for computers__________________*/
+@media screen and (min-width: 1932px) {
+  .brands__btn-close,
+  .brands__btn-show-more {
+    display: none !important;
   }
 }

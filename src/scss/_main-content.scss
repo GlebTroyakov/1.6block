@@ -1,7 +1,11 @@
-/*________________for computers__________________*/
+
+
 @media screen and (min-width: 1440px) {
   .body .main-content {
-    //width: 80% !important;
-    //max-width: 1200px !important;
+    width: 100% !important;
+  }
+
+  .body .menu {
+    width: 20% !important;
   }
 }

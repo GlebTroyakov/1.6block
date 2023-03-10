@@ -52,10 +52,10 @@
 
   /* __________header__________*/
   .header {
-    background-color: #F8F8F8;
+    background-color: $color-main-background;
   }
 
-  .left-menu,
+  .burger-menu,
   .header__logo,
   .header .call,
   .header .chat,
@@ -75,7 +75,7 @@
   .status-order__text {
     display: inline;
     font-family: 'TT Lakes Regular', sans-serif;
-    color: #1B1C21;
+    color: $color-main-text;
     margin-right: 8px;
   }
 
